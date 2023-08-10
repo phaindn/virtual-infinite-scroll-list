@@ -1,0 +1,77 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "webextensions": true,
+    "mocha": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 2017
+  },
+  "plugins": [
+    "html",
+    "mocha"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      "tab",
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": 0,
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-mixed-spaces-and-tabs": [
+      "error",
+      "smart-tabs"
+    ],
+    "no-console": "off",
+    "no-alert": "error",
+    "no-debugger": "error",
+    "no-var": "error",
+    "no-cond-assign": "off",
+    "one-var": ["error", "never"],
+    "curly": "error",
+    "mocha/no-exclusive-tests": "error",
+    "no-prototype-builtins": "off",
+    "no-useless-escape": 0,
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ],
+  "globals": {
+    "DEVELOPMENT": true,
+    "loadTimeData": true,
+    "process": true,
+    "__dirname": true,
+    "EE": true
+  },
+  "parser": "@typescript-eslint/parser"
+}

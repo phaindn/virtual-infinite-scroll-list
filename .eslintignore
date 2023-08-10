@@ -1,0 +1,6 @@
+build/**
+savior-*/**
+src/tests/**
+src/libs/*
+src/background/ytdl-bundle.js
+src/common/pagecomm-pagecode.js

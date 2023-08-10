@@ -1,0 +1,20 @@
+{
+  "name": "virtual-infinite-scroll-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "module": "dist/index.modern.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "microbundle watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "typescript": "^5.1.6"
+  }
+}
