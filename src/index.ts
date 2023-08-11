@@ -1,19 +1,6 @@
-interface IConstructOptions<T> {
-    itemHeight: number;
-    items: T[];
-    renderItem
-}
+import 'intersecton-observer-polyfill/index.global';
 
-class VirtualInfiniteScroll<T = any> {
+import VirtualInfiniteScroll from './virtual-infinite';
 
-    el: HTMLElement;
-    options: IConstructOptions<T>;
-
-    constructor(el: HTMLElement, props: IConstructOptions<T>) {
-        this.el = el;
-        this.options = props;
-    }
-
-}
-
-export default VirtualInfiniteScroll;
+export { InfiniteScroll } from './infinite-scroll';
+export { VirtualInfiniteScroll };
